@@ -8,20 +8,14 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>lonchin-commodity</artifactId>
+    <artifactId>lonchin-payment</artifactId>
     <packaging>pom</packaging>
 
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <java.version>1.8</java.version>
-    </properties>
-
     <modules>
-        <module>lonchin-commodity-web</module>
-        <module>lonchin-commodity-common</module>
-        <module>lonchin-commodity-service</module>
-        <module>lonchin-commodity-dal</module>
+        <module>lonchin-payment-web</module>
+        <module>lonchin-payment-service</module>
+        <module>lonchin-payment-dal</module>
+        <module>lonchin-payment-common</module>
     </modules>
 
     <dependencies>
@@ -53,5 +47,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>

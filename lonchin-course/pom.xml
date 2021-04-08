@@ -7,9 +7,11 @@
         <groupId>com.lonchin</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
+
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>lonchin-commodity</artifactId>
+    <artifactId>lonchin-course</artifactId>
     <packaging>pom</packaging>
+    <name>lonchin-course</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -18,10 +20,10 @@
     </properties>
 
     <modules>
-        <module>lonchin-commodity-web</module>
-        <module>lonchin-commodity-common</module>
-        <module>lonchin-commodity-service</module>
-        <module>lonchin-commodity-dal</module>
+        <module>lonchin-course-web</module>
+        <module>lonchin-course-service</module>
+        <module>lonchin-course-dal</module>
+        <module>lonchin-course-common</module>
     </modules>
 
     <dependencies>

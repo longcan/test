@@ -3,21 +3,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>lonchin-user</artifactId>
+        <artifactId>lonchin-sns</artifactId>
         <groupId>com.lonchin</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.lonchin.user.dal</groupId>
-    <artifactId>lonchin-user-dal</artifactId>
+    <groupId>com.lonchin.sns.common</groupId>
+    <artifactId>lonchin-sns-common</artifactId>
 
-    <dependencies>
-        <dependency>
-            <groupId>com.lonchin.user.common</groupId>
-            <artifactId>lonchin-user-common</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-    </dependencies>
 
 </project>

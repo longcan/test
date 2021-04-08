@@ -8,8 +8,9 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>lonchin-commodity</artifactId>
+    <artifactId>lonchin-order</artifactId>
     <packaging>pom</packaging>
+    <name>lonchin-order</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -18,10 +19,10 @@
     </properties>
 
     <modules>
-        <module>lonchin-commodity-web</module>
-        <module>lonchin-commodity-common</module>
-        <module>lonchin-commodity-service</module>
-        <module>lonchin-commodity-dal</module>
+        <module>lonchin-order-web</module>
+        <module>lonchin-order-service</module>
+        <module>lonchin-order-dal</module>
+        <module>lonchin-order-common</module>
     </modules>
 
     <dependencies>
@@ -53,5 +54,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>

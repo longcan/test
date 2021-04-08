@@ -32,6 +32,10 @@
         <module>lonchin-user</module>
         <module>lonchin-core</module>
         <module>lonchin-commodity</module>
+        <module>lonchin-payment</module>
+        <module>lonchin-order</module>
+        <module>lonchin-sns</module>
+        <module>lonchin-course</module>
     </modules>
 
     <dependencyManagement>
@@ -60,6 +64,18 @@
 
     <build>
         <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>${spring-boot.version}</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>build-info</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
             <!-- 资源文件拷贝插件 -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -73,14 +89,10 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
                     <encoding>UTF-8</encoding>
                 </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
     </build>

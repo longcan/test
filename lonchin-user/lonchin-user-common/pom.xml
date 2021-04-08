@@ -8,7 +8,7 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <groupId>lonchin.user.common</groupId>
+    <groupId>com.lonchin.user.common</groupId>
     <artifactId>lonchin-user-common</artifactId>
 
 

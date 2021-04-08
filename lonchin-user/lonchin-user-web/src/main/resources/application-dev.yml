@@ -1,0 +1,52 @@
+server:
+  port: 8080
+common:
+  dbBasePath: /opt/jar/
+jwt:
+  header: Authorization
+  secret: lonchin_user
+  clientX: ClientX
+  expiration: 604800
+  tokenHead: "Bearer D"
+  env: "D"
+spring:
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password: lonchin
+    jedis:
+      pool:
+        # 最大活跃链接数 默认8
+        max-active: 8
+        # 最大空闲连接数 默认8
+        max-idle: 8
+        # 最小空闲连接数 默认0
+        min-idle: 0
+      database: 0
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.zaxxer.hikari.HikariDataSource
+    hikari:
+      max-lifetime: 1765000
+      maximum-pool-size: 10
+      minimum-idle: 1
+    url: jdbc:mysql://localhost:3306/lonchin?allowPublicKeyRetrieval=true&useSSL=false&useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+  main:
+    allow-bean-definition-overriding: true
+    lazy-initialization: true
+  mvc:
+    throw-exception-if-no-handler-found: true
+  servlet:
+    multipart:
+      max-file-size: 500MB
+      max-request-size: 20MB
+  application:
+    name: lonchin_user
+logging:
+  level:
+   root: INFO
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.log4j2.Log4j2Impl
